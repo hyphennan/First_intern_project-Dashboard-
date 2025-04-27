@@ -1,6 +1,4 @@
- 
- 
- import streamlit as st
+import streamlit as st
 import pandas as pd
 from sqlalchemy import create_engine, exc, text
 import altair as alt  
@@ -100,6 +98,7 @@ sum_plf_vr01 = grouped_df[grouped_df['WTG'] == 'VR-01']['PLF'].sum() / 30
 sum_plf_vr02 = grouped_df[grouped_df['WTG'] == 'VR-02']['PLF'].sum() / 30  
 sum_plf_vr04 = grouped_df[grouped_df['WTG'] == 'VR-04']['PLF'].sum() / 30       
  sum_plf_vr07 = grouped_df[grouped_df['WTG'] == 'VR-07']['PLF'].sum() / 30
+
 summary_df = pd.DataFrame({
 'WTG': ['RM-01', 'RM-02', 'RM-04', 'RM-08', 'RM-09', 'RM-10', 'RM-11', 'VR-01', 'VR-02', 'VR-04', 'VR-07'],
 'final-PLF': [sum_plf_rm01, sum_plf_rm02, sum_plf_rm04, sum_plf_rm08, sum_plf_rm09, 
