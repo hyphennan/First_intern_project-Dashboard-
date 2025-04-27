@@ -5,12 +5,13 @@
 
 Internship project focused on building a Streamlit-based dashboard for visualizing and analyzing turbine performance data, operational KPIs, and revenue trends using SQLAlchemy and Altair.
 
-## Technologies Used
-- Python
-- Streamlit
-- SQLAlchemy
-- Altair
-- Microsoft SQL Server
+#Technologies Used:
+- Python: Main programming language for backend logic.
+- Streamlit: Used for creating interactive, web-based dashboards.
+- SQLAlchemy: ORM for database interactions.
+- Altair: Visualization library used for creating interactive charts and graphs.
+- Microsoft SQL Server: Database used to store turbine operational data.
+
 
 ## Project Description
 This dashboard connects to a SQL Server database, processes turbine operational data, and visualizes key metrics such as wind speed, active power, revenue generation, and performance load factor (PLF).
